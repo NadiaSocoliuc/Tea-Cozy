@@ -1,0 +1,134 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  border: 0;
+}
+
+/* header style*/
+.header {
+  width: 100%;
+  height: 69px;
+  display: block;
+  position: fixed;
+  top: 0px; /* daca setam top: 0px; atunci cind dam scroll la pagina bara ramine fixata,
+   imaginea se duce sub bara.*/
+  background-color: black;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  height: 50px;
+  float: left;
+  padding-left: 10px;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+.navigation a {
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+  float: left;
+  padding: 0px 20px;
+}
+.navigation li {
+  display: inline-block;
+}
+
+/* style the box-mission*/
+
+.box-mission {
+  background-image: url("imagini/tea.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  max-width: 1200px;
+  margin: 70px auto 70px auto;
+  display: flex;
+  align-items: center; /* aranjeaza text vertical*/
+}
+
+.box-text {
+  /*margin: auto; /*Daca alegem margin: auto;, textul va fi aranjat automat 
+  vertical si orizontal in centru. in acest nu e necoie sa setez in 
+  .box-mission {align-items: center;}*/
+  width: 100%;
+  background-color: black;
+  padding: auto;
+}
+
+/* style "Tea of the month" part*/
+
+.racommendation {
+  display: inline-flex;
+  max-width: 1000px;
+  height: auto;
+  flex-wrap: wrap; /*permite imaginilor sa mearga in urmatorul rind, daca nu mai au loc pe primul rind*/
+  align-items: center;
+  justify-content: center;
+}
+
+.tea-type img {
+  height: 200px;
+  width: 300px;
+  margin: 10px 10px; /* distanta dintre imagini si text*/
+}
+
+/* style "locations" part*/
+
+.text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.locations {
+  height: 500px;
+  max-width: 1200px;
+  margin: 70px auto 70px auto;
+  padding-top: 90px;
+  background: url("imagini/coffee.jpg");
+  background-position: center;
+  background-size: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-address {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-address {
+  height: 300px;
+  margin: 40px;
+  flex-basis: 15em;
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 1;
+}
+
+.contact {
+  display: block;
+  height: 200px;
+}
+
+footer {
+  display: block;
+  float: left;
+  padding-left: 20px;
+}
